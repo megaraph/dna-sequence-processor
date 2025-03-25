@@ -1,8 +1,8 @@
-# DNA Sequence Processor
+# DNAxplorer
 
 ## Overview
 
-The DNA Sequence Processor is a Python-based application with a graphical user interface (GUI) built using PyQt5. The app processes DNA sequences from a CSV file and provides various functionalities, including reverse, complement, and reverse-complement generation, as well as statistical and visual analyses of nucleotide distributions.
+DNAxplorer is a Python-based, DNA Sequence Processor, application with a graphical user interface (GUI) built using PyQt5. The app processes DNA sequences from a CSV file and provides various functionalities, including reverse, complement, and reverse-complement generation, as well as statistical and visual analyses of nucleotide distributions.
 
 ![GUI screenshot](images/gui.png)
 

@@ -22,7 +22,7 @@ from bio_tools import complement, reverse, reverse_complement, gc_content
 class DNAProcessorApp(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("DNA Sequence Processor")
+        self.setWindowTitle("DNAxplorer")
         self.setGeometry(100, 100, 1000, 600)
 
         self.central_widget = QWidget()
@@ -40,7 +40,7 @@ class DNAProcessorApp(QMainWindow):
         self.main_layout.addLayout(self.right_panel)
 
         # App Title
-        self.app_title = QLabel("DNA Sequence Processor")
+        self.app_title = QLabel("DNAxplorer")
         self.app_title.setFont(QFont("Arial", 18, QFont.Bold))
         self.app_title.setAlignment(Qt.AlignCenter)
         self.left_panel.addWidget(self.app_title)
