@@ -1,3 +1,6 @@
+import pandas as pd
+
+
 # Function to generate complement and reverse complement of DNA sequence
 def complement(sequence):
     complement_map = str.maketrans("ATCG", "TAGC")
