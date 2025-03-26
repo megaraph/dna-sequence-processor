@@ -119,6 +119,14 @@ class DNAProcessorApp(QMainWindow):
                 )
                 return
 
+            # Validate DNA sequences
+            for sequence in self.df["DNA_Sequence"]:
+                if not self.is_valid_dna_sequence(sequence):
+                    QMessageBox.critical(
+                        self, "Error", f"Invalid DNA sequence found: {sequence}"
+                    )
+                    return
+
             # Process DNA sequences
             self.df["Reverse"] = self.df["DNA_Sequence"].apply(reverse)
             self.df["Complement"] = self.df["DNA_Sequence"].apply(complement)
@@ -134,6 +142,9 @@ class DNAProcessorApp(QMainWindow):
 
         except Exception as e:
             QMessageBox.critical(self, "Error", f"Failed to process the CSV file.\n{e}")
+
+    def is_valid_dna_sequence(self, sequence):
+        return all(base in "ATCG" for base in sequence)
 
     def update_table(self, df):
         self.table_widget.clear()
