@@ -1,5 +1,11 @@
 # DNAxplorer
 
+Authors: <br>
+Raphael C. Murillo<sup>1</sup><br>
+Niru Miguel Dagoy<sup>1</sup>
+
+<sup>1</sup>BS Biomedical Engineering, Department of Manufacturing Engineering and Management, DLSU
+
 ## Overview
 
 DNAxplorer is a Python-based, DNA Sequence Processor, application with a graphical user interface (GUI) built using PyQt5. The app processes DNA sequences from a CSV file and provides various functionalities, including reverse, complement, and reverse-complement generation, as well as statistical and visual analyses of nucleotide distributions.
