@@ -79,10 +79,15 @@ class DNAProcessorApp(QMainWindow):
         self.left_panel.addWidget(self.table_widget)
         self.table_widget.cellClicked.connect(self.display_sequence_statistics)
 
-        # Statistics Label
+        # Statistics Label and Rows Loaded Label
         self.statistics_label = QLabel("Statistics:")
         self.statistics_label.setFont(QFont("Arial", 14, QFont.Bold))
         self.right_panel.addWidget(self.statistics_label)
+
+        # Rows Loaded Label
+        self.rows_loaded_label = QLabel("Rows Loaded: 0")
+        self.rows_loaded_label.setFont(QFont("Arial", 12))
+        self.left_panel.addWidget(self.rows_loaded_label)
 
         # Statistics Text
         self.statistics_text = QTextEdit()
@@ -124,6 +129,7 @@ class DNAProcessorApp(QMainWindow):
             # Update the table
             self.update_table(self.df)
             self.save_button.setEnabled(True)
+            self.rows_loaded_label.setText(f"Rows Loaded: {len(self.df)}")
             self.file_label.setText(f"Uploaded File: {file_path}")
 
         except Exception as e:
