@@ -4,7 +4,7 @@ Authors: <br>
 Raphael C. Murillo<sup>1</sup><br>
 Niru Miguel Dagoy<sup>1</sup>
 
-<sup>1</sup>BS Biomedical Engineering, Department of Manufacturing Engineering and Management, DLSU
+<sup>1</sup>BS Biomedical Engineering, Department of Manufacturing Engineering and Management, De La Salle University
 
 ## Overview
 
