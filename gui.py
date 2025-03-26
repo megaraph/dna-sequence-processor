@@ -39,11 +39,17 @@ class DNAProcessorApp(QMainWindow):
         self.right_panel = QVBoxLayout()
         self.main_layout.addLayout(self.right_panel)
 
-        # App Title
+        # App Title and Company Name
         self.app_title = QLabel("DNAxplorer")
         self.app_title.setFont(QFont("Arial", 18, QFont.Bold))
         self.app_title.setAlignment(Qt.AlignCenter)
         self.left_panel.addWidget(self.app_title)
+
+        # Company Name Label
+        self.company_name_label = QLabel("by BisdakBioTech")
+        self.company_name_label.setFont(QFont("Arial", 10))
+        self.company_name_label.setAlignment(Qt.AlignCenter)
+        self.left_panel.addWidget(self.company_name_label)
 
         # File Label
         self.file_label = QLabel("No file uploaded.")
